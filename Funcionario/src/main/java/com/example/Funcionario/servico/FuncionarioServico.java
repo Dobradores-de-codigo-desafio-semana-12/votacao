@@ -8,6 +8,8 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
+import java.util.List;
+
 @RequiredArgsConstructor
 @Service
 public class FuncionarioServico {
@@ -35,6 +37,10 @@ public class FuncionarioServico {
     public void desabilitarFuncionario(Long id) {
         Funcionario fun = buscarPorId(id);
         fun.setAtivo(false);
+    }
+    @Transactional(readOnly = true)
+    public List<Funcionario> buscarTodos() {
+        return funcionarioRepositorio.findAll();
     }
 
 }
