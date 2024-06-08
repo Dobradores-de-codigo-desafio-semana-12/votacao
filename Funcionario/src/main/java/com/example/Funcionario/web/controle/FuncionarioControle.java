@@ -9,10 +9,7 @@ import jakarta.validation.Valid;
 import lombok.RequiredArgsConstructor;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
-import org.springframework.web.bind.annotation.PostMapping;
-import org.springframework.web.bind.annotation.RequestBody;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.annotation.*;
 
 @RequiredArgsConstructor
 @RestController
@@ -25,6 +22,11 @@ public class FuncionarioControle {
     public ResponseEntity<FuncionarioRespostaDto> cadastrarFuncionario(@Valid @RequestBody FuncionarioCriarDto dto){
         Funcionario fun = funcionarioServico.salvar(FuncionarioMapa.paraFuncionario(dto));
         return ResponseEntity.status(HttpStatus.CREATED).body(FuncionarioMapa.paraDto(fun));
+    }
+    @GetMapping("/{id}")
+    public ResponseEntity<FuncionarioRespostaDto> buscarFuncionario(@PathVariable Long id){
+        Funcionario fun = funcionarioServico.buscarPorId(id);
+        return ResponseEntity.ok(FuncionarioMapa.paraDto(fun));
     }
 
 }

@@ -19,5 +19,11 @@ public class FuncionarioServico {
     public Funcionario salvar(Funcionario fun) {
         return funcionarioRepositorio.save(fun);
     }
+    @Transactional(readOnly = true)
+    public Funcionario buscarPorId(Long id) {
+        return funcionarioRepositorio.findById(id).orElseThrow(
+                ()-> new RuntimeException(String.format("Funcionario não encontrado", id))
+        );
+    }
 
 }
