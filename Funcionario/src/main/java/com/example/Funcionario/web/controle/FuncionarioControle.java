@@ -12,6 +12,8 @@ import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
+import java.util.List;
+
 @RequiredArgsConstructor
 @RestController
 @RequestMapping("api/v1/funcionarios")
@@ -38,5 +40,10 @@ public class FuncionarioControle {
     public ResponseEntity<Void> desabilitarFuncionario(@PathVariable Long id) {
         funcionarioServico.desabilitarFuncionario(id);
         return ResponseEntity.noContent().build();
+    }
+    @GetMapping
+    public ResponseEntity<List<FuncionarioRespostaDto>> getAll() {
+        List<Funcionario> fun = funcionarioServico.buscarTodos();
+        return ResponseEntity.ok(FuncionarioMapa.paraListaDto(fun));
     }
 }
