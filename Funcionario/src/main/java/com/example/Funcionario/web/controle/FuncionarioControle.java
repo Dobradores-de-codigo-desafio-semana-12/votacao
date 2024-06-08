@@ -34,5 +34,9 @@ public class FuncionarioControle {
         Funcionario fun = funcionarioServico.editarEmail(id, dto.getNovoEmail());
         return ResponseEntity.status(HttpStatus.ACCEPTED).body(FuncionarioMapa.paraDto(fun));
     }
-
+    @PatchMapping("/desabilitar/{id}")
+    public ResponseEntity<Void> desabilitarFuncionario(@PathVariable Long id) {
+        funcionarioServico.desabilitarFuncionario(id);
+        return ResponseEntity.noContent().build();
+    }
 }

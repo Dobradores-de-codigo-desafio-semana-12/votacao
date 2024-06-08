@@ -31,5 +31,10 @@ public class FuncionarioServico {
         fun.setEmail(novoEmail);
         return fun;
     }
+    @Transactional
+    public void desabilitarFuncionario(Long id) {
+        Funcionario fun = buscarPorId(id);
+        fun.setAtivo(false);
+    }
 
 }
