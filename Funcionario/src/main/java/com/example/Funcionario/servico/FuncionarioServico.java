@@ -25,5 +25,11 @@ public class FuncionarioServico {
                 ()-> new RuntimeException(String.format("Funcionario não encontrado", id))
         );
     }
+    @Transactional
+    public Funcionario editarEmail(Long id, String novoEmail) {
+        Funcionario fun = buscarPorId(id);
+        fun.setEmail(novoEmail);
+        return fun;
+    }
 
 }
