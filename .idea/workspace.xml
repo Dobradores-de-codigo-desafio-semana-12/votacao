@@ -5,11 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="b3a724e5-f613-4b0d-873c-e601c8bec78d" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/EurekaServer/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/EurekaServer/src/main/resources/application.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Funcionario/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/Funcionario/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Funcionario/src/main/java/com/example/Funcionario/FuncionarioApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/Funcionario/src/main/java/com/example/Funcionario/FuncionarioApplication.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Funcionario/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/Funcionario/src/main/resources/application.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/funcionarios.mv.db" beforeDir="false" afterPath="$PROJECT_DIR$/funcionarios.mv.db" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -17,6 +13,11 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="Git.Settings">
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="dev" />
+      </map>
+    </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="MarkdownSettingsMigration">
@@ -30,17 +31,18 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;dev&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Users/T-Gamer/Documents/GitHub/votacao&quot;,
-    &quot;project.structure.last.edited&quot;: &quot;Project&quot;,
-    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
-    &quot;project.structure.side.proportion&quot;: &quot;0.0&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "git-widget-placeholder": "api-funcionarios/Conclusao-Eurika__E__Actuator-",
+    "ignore.virus.scanning.warn.message": "true",
+    "last_opened_file_path": "C:/Users/T-Gamer/Documents/GitHub/votacao",
+    "project.structure.last.edited": "Project",
+    "project.structure.proportion": "0.15",
+    "project.structure.side.proportion": "0.0"
   }
-}</component>
+}]]></component>
   <component name="RunManager" selected="Application.FuncionarioApplication">
     <configuration name="EurekaserverApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.example.eurekaserver.EurekaserverApplication" />
