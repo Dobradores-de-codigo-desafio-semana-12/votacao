@@ -15,7 +15,7 @@ import java.util.List;
 
 @RequiredArgsConstructor
 @RestController
-@RequestMapping("api/v1/proposta")
+@RequestMapping("/api/v1/propostas")
 public class PropostaControle {
 
     private final PropostaServico propostaServico;
