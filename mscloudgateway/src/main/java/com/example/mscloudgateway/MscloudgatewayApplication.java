@@ -18,7 +18,9 @@ public class MscloudgatewayApplication {
 	public RouteLocator routes(RouteLocatorBuilder builder){
 		return builder
 				.routes()
-					.route(r ->r.path("/Funcionario//**").uri("lb//Funcionario"))
+					.route(r ->r.path("/api/v1/funcionarios/**").uri("lb//Funcionario"))
+					.route(r ->r.path("/api/v1/propostas/**").uri("lb//Proposta"))
+					.route(r ->r.path("/api/v1/votacoes/**").uri("lb//Proposta"))
 				.build();
 	}
 
