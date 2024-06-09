@@ -5,8 +5,9 @@ import lombok.*;
 import org.springframework.data.jpa.domain.support.AuditingEntityListener;
 
 import java.io.Serializable;
-import java.util.Objects;
 
+
+@EqualsAndHashCode
 @AllArgsConstructor
 @Getter @Setter @RequiredArgsConstructor
 @Table(name = "propostas")
@@ -27,17 +28,4 @@ public class Proposta implements Serializable {
     @Column(name = "ativo", nullable = false, length = 100)
     private Boolean ativo = true;
 
-
-    @Override
-    public boolean equals(Object o) {
-        if (this == o) return true;
-        if (o == null || getClass() != o.getClass()) return false;
-        Proposta proposta = (Proposta) o;
-        return Objects.equals(id, proposta.id);
-    }
-
-    @Override
-    public int hashCode() {
-        return Objects.hashCode(id);
-    }
 }
