@@ -27,6 +27,14 @@ public class Funcionario implements Serializable {
     @Column(name = "ativo", nullable = false, length = 100)
     private Boolean ativo = true;
 
+
+    public Funcionario(long id, String nome, String email, Boolean ativo) {
+        this.id = id;
+        this.nome = nome;
+        this.email = email;
+        this.ativo = ativo;
+    }
+
     @Override
     public boolean equals(Object o) {
         if (this == o) return true;
