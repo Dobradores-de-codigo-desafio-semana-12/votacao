@@ -3,6 +3,7 @@ package com.example.Proposta.servico;
 
 import com.example.Proposta.entidade.Proposta;
 import com.example.Proposta.repositorio.PropostaRepositorio;
+import jakarta.persistence.EntityNotFoundException;
 import lombok.RequiredArgsConstructor;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
@@ -41,5 +42,11 @@ public class PropostaServico {
     public List<Proposta> buscarTodos() {
 
         return propostaRepositorio.findAll();
+    }
+    @Transactional(readOnly = true)
+    public String buscarTituloPorId(Long id) {
+        Proposta proposta = propostaRepositorio.findById(id)
+                .orElseThrow(() -> new EntityNotFoundException("Proposta não encontrada com o ID: " + id));
+        return proposta.getTitulo();
     }
 }
