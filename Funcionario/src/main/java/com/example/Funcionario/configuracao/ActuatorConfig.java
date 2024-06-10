@@ -1,4 +1,4 @@
-package com.example.Funcionario.configuracoes;
+package com.example.Funcionario.configuracao;
 
 
 import org.springframework.boot.autoconfigure.EnableAutoConfiguration;

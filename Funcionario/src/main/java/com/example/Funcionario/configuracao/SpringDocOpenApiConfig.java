@@ -1,4 +1,4 @@
-package com.example.Funcionario.configuracoes;
+package com.example.Funcionario.configuracao;
 
 import io.swagger.v3.oas.models.OpenAPI;
 import io.swagger.v3.oas.models.info.Info;
