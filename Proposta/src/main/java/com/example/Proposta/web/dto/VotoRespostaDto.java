@@ -14,7 +14,6 @@ import lombok.Setter;
 public class VotoRespostaDto {
 
     private String propostaTitulo;
-
     private int aprovar;
     private int rejeitar;
 

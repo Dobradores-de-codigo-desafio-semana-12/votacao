@@ -11,8 +11,8 @@ public class VotoCriarDto {
 
     private Long propostaId;
 
-    private String funcionarioId;
+    private Long funcionarioId;
 
     @Enumerated(EnumType.STRING)
-    private Voto votar;
+    private Voto.Votar votar;
 }

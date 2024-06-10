@@ -17,11 +17,12 @@ public class Voto implements Serializable {
     @Column(name = "id")
     private Long id;
 
-    @Column(name = "proposta_titulo")
+    @ManyToOne
+    @JoinColumn(name = "proposta_titulo")
     private Proposta propostaTitulo;
 
     @Column(name = "funcionario_Id")
-    private String funcionarioId;
+    private Long funcionarioId;
 
     @Column(name = "votar")
     private Votar votar;
