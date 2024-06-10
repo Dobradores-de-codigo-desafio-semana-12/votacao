@@ -6,6 +6,9 @@ import com.example.Proposta.cliente.ClienteFuncionario;
 import com.example.Proposta.cliente.Funcionario;
 import com.example.Proposta.entidade.Proposta;
 import com.example.Proposta.entidade.Voto;
+import com.example.Proposta.excecao.FuncionarioJaVotouException;
+import com.example.Proposta.excecao.FuncionarioNaoEncontradoException;
+import com.example.Proposta.excecao.PropostaInativadaException;
 import com.example.Proposta.repositorio.VotoRepositorio;
 import com.example.Proposta.web.dto.VotoCriarDto;
 import com.example.Proposta.web.dto.VotoRespostaDto;
@@ -30,28 +33,30 @@ public class VotoServico {
     @Transactional(readOnly = true)
     public Funcionario buscarFuncionarioPorId(Long id) {
         Funcionario fun = funcionario.pegarFuncionario(id);
+        if (fun == null) {
+            throw new FuncionarioNaoEncontradoException(id);
+        }
         return fun;
     }
 
-
     @Transactional(readOnly = true)
-    public void iniciarVotos (Long id){
-        Proposta proposta = new Proposta();
-        propostaServico.buscarPorId(id);
-        if(!proposta.getAtivo()){
-            throw new RuntimeException(String.format("Proposta inativa"));
+    public void iniciarVotos(Long id) {
+        Proposta proposta = propostaServico.buscarPorId(id);
+        if (!proposta.getAtivo()) {
+            throw new PropostaInativadaException(id);
         }
-        Timer timer =new Timer();
+        Timer timer = new Timer();
         timer.schedule(new TimerTask() {
             @Override
             public void run() {
             }
-        }, proposta.getTempo()*60000L);
+        }, proposta.getTempo() * 60000L);
     }
+
     @Transactional
     public VotoRespostaDto votar(VotoCriarDto dto){
         if(votoRepositorio.existsByFuncionarioId(dto.getFuncionarioId())){
-            throw new RuntimeException("Funcionario já votou");
+            throw new FuncionarioJaVotouException(dto.getFuncionarioId());
         }
 
         Voto voto = new Voto();

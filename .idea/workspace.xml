@@ -6,8 +6,8 @@
   <component name="ChangeListManager">
     <list default="true" id="b3a724e5-f613-4b0d-873c-e601c8bec78d" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Funcionario/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/Funcionario/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Funcionario/src/main/java/com/example/Funcionario/web/controle/FuncionarioControle.java" beforeDir="false" afterPath="$PROJECT_DIR$/Funcionario/src/main/java/com/example/Funcionario/web/controle/FuncionarioControle.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Proposta/src/main/java/com/example/Proposta/servico/PropostaServico.java" beforeDir="false" afterPath="$PROJECT_DIR$/Proposta/src/main/java/com/example/Proposta/servico/PropostaServico.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Proposta/src/main/java/com/example/Proposta/servico/VotoServico.java" beforeDir="false" afterPath="$PROJECT_DIR$/Proposta/src/main/java/com/example/Proposta/servico/VotoServico.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -52,7 +52,7 @@
     "project.structure.side.proportion": "0.0"
   }
 }]]></component>
-  <component name="RunManager" selected="Application.FuncionarioApplication">
+  <component name="RunManager" selected="Application.PropostaApplication">
     <configuration name="EurekaserverApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.example.eurekaserver.EurekaserverApplication" />
       <module name="eurekaserver" />
@@ -94,9 +94,9 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.PropostaApplication" />
         <item itemvalue="Application.FuncionarioApplication" />
         <item itemvalue="Application.EurekaserverApplication" />
-        <item itemvalue="Application.PropostaApplication" />
       </list>
     </recent_temporary>
   </component>
