@@ -43,6 +43,11 @@ public class VotoServico {
         }
         return fun;
     }
+    @Transactional(readOnly = true)
+    public List<Voto> votoFuncionario(Long funcionarioId) {
+        List<Voto> votos = votoRepositorio.findByFuncionarioId(funcionarioId);
+        return votos;
+    }
 
     @Transactional(readOnly = true)
     public void iniciarVotos(Long id) {
@@ -64,8 +69,14 @@ public class VotoServico {
 
     @Transactional
     public VotoRespostaDto votar(VotoCriarDto dto){
-        if(votoRepositorio.existsByFuncionarioId(dto.getFuncionarioId())){
-            throw new FuncionarioJaVotouException(dto.getFuncionarioId());
+
+        List<Voto> lista = votoFuncionario(dto.getFuncionarioId());
+
+
+        for (Voto votoFuncionario : lista) {
+            if (votoFuncionario.getPropostaTitulo().getId()== dto.getPropostaId()){
+                throw new FuncionarioJaVotouException(dto.getFuncionarioId());
+            }
         }
 
         Voto voto = new Voto();
