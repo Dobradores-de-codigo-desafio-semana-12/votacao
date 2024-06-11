@@ -32,6 +32,7 @@ public class FuncionarioServico {
                 ()-> new FuncionarioNaoEncontradoException(id)
         );
     }
+
     @Transactional
     public Funcionario editarEmail(Long id, String novoEmail) {
         Funcionario fun = buscarPorId(id);
@@ -42,6 +43,13 @@ public class FuncionarioServico {
             throw new FuncionarioAtualizarException(id, e.getMessage());
         }
     }
+
+    @Transactional
+    public void habilitarFuncionario(Long id) {
+        Funcionario fun = buscarPorId(id);
+        fun.setAtivo(true);
+    }
+
     @Transactional
     public void desabilitarFuncionario(Long id) {
         Funcionario fun = buscarPorId(id);
