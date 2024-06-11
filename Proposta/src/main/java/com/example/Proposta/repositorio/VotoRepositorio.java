@@ -10,7 +10,5 @@ public interface VotoRepositorio extends JpaRepository<Voto, Long> {
     int countByVotar(Voto.Votar votar);
 
 
-    boolean existsByFuncionarioId(Long funcionarioId);
-
-
+    List<Voto> findByFuncionarioId(Long funcionarioId);
 }
