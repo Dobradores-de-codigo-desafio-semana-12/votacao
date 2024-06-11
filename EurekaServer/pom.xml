@@ -41,7 +41,7 @@
 				<scope>import</scope>
 			</dependency>
 		</dependencies>
-	</dependencyManagement>
+	</dependencyManagement>git
 
 	<build>
 		<plugins>
