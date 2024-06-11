@@ -6,14 +6,18 @@ import com.example.Proposta.excecao.PropostaJaDesativadaException;
 import com.example.Proposta.excecao.PropostaJaExisteException;
 import com.example.Proposta.excecao.PropostaNaoEncontradoException;
 import com.example.Proposta.repositorio.PropostaRepositorio;
+import com.example.Proposta.web.dto.PropostaRespostaDto;
 import jakarta.persistence.EntityNotFoundException;
 import lombok.RequiredArgsConstructor;
+import lombok.extern.log4j.Log4j2;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.dao.DataIntegrityViolationException;
+import org.springframework.kafka.core.KafkaTemplate;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
 import java.util.List;
+
 
 @RequiredArgsConstructor
 @Service
@@ -21,6 +25,7 @@ public class PropostaServico {
 
     @Autowired
     private final PropostaRepositorio propostaRepositorio;
+
 
     @Transactional
     public Proposta salvar(Proposta proposta) {
@@ -58,4 +63,5 @@ public class PropostaServico {
                 .orElseThrow(() -> new PropostaNaoEncontradoException(id));
         return proposta.getTitulo();
     }
+
 }
