@@ -10,10 +10,13 @@ import com.example.Proposta.excecao.FuncionarioJaVotouException;
 import com.example.Proposta.excecao.FuncionarioNaoEncontradoException;
 import com.example.Proposta.excecao.PropostaInativadaException;
 import com.example.Proposta.repositorio.VotoRepositorio;
+import com.example.Proposta.web.dto.PropostaRespostaDto;
 import com.example.Proposta.web.dto.VotoCriarDto;
 import com.example.Proposta.web.dto.VotoRespostaDto;
 import lombok.Getter;
 import lombok.RequiredArgsConstructor;
+import lombok.extern.log4j.Log4j2;
+import org.springframework.kafka.core.KafkaTemplate;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 import java.util.List;
@@ -21,6 +24,7 @@ import java.util.List;
 import java.util.Timer;
 import java.util.TimerTask;
 
+@Log4j2
 @Getter
 @RequiredArgsConstructor
 @Service
@@ -29,6 +33,7 @@ public class VotoServico {
     private final PropostaServico propostaServico;
     private final VotoRepositorio votoRepositorio;
     private final ClienteFuncionario funcionario;
+    private final KafkaTemplate<String, VotoRespostaDto> kafkaTemplate;
 
     @Transactional(readOnly = true)
     public Funcionario buscarFuncionarioPorId(Long id) {
@@ -48,7 +53,11 @@ public class VotoServico {
         Timer timer = new Timer();
         timer.schedule(new TimerTask() {
             @Override
-            public void run() {
+            public void run() {  VotoRespostaDto respostaDto = new VotoRespostaDto();
+                respostaDto.setPropostaTitulo(propostaServico.buscarTituloPorId(id));
+                respostaDto.setAprovar(votoRepositorio.countByVotar(Voto.Votar.APROVAR));
+                respostaDto.setRejeitar(votoRepositorio.countByVotar(Voto.Votar.REJEITAR));
+                enviarMensagem(respostaDto);
             }
         }, proposta.getTempo() * 60000L);
     }
@@ -71,6 +80,19 @@ public class VotoServico {
         respostaDto.setRejeitar(votoRepositorio.countByVotar(Voto.Votar.REJEITAR));
 
         return respostaDto;
+    }
+    public void enviarMensagem(VotoRespostaDto dto){
+        kafkaTemplate.send("Resultado", dto).whenComplete((sendResult, e) ->
+        {
+            if(e == null){
+                log.info("Mensagem enviada com sucesso: {}", sendResult.getProducerRecord().value().getPropostaTitulo());
+                log.info("Participação: {}", sendResult.getProducerRecord().partition());
+                log.info("Offset: {}", sendResult.getRecordMetadata().offset());
+            }
+            else{
+                log.error("Erro ao enviar a mensagem", e);
+            }
+        });
     }
 
 }
