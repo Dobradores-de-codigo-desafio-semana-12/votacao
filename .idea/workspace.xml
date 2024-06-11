@@ -5,10 +5,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="b3a724e5-f613-4b0d-873c-e601c8bec78d" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_10_06_2024_13_23__Changes_.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_10_06_2024_13_23__Changes_.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Funcionario/src/main/java/com/example/Funcionario/configuracao/ActuatorConfig.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Funcionario/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/Funcionario/src/main/resources/application.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Proposta/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/Proposta/src/main/resources/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Funcionario/src/main/java/com/example/Funcionario/exception/FuncionarioDesabilitarException.java" beforeDir="false" afterPath="$PROJECT_DIR$/Funcionario/src/main/java/com/example/Funcionario/exception/FuncionarioDesabilitarException.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Funcionario/src/main/java/com/example/Funcionario/exception/FuncionarioNaoSalvoException.java" beforeDir="false" afterPath="$PROJECT_DIR$/Funcionario/src/main/java/com/example/Funcionario/exception/FuncionarioNaoSalvoException.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -25,10 +25,13 @@
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$" value="dev" />
+        <entry key="$PROJECT_DIR$" value="api-propostas/Configurando-Actuator" />
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="JpbToolWindowState">
+    <option name="isToolWindowVisible" value="false" />
   </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
@@ -45,15 +48,16 @@
   "keyToString": {
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
-    "git-widget-placeholder": "api-propostas/Configurando-Actuator",
+    "git-widget-placeholder": "dev",
     "ignore.virus.scanning.warn.message": "true",
     "last_opened_file_path": "C:/Users/T-Gamer/Documents/GitHub/votacao",
     "project.structure.last.edited": "Project",
     "project.structure.proportion": "0.15",
-    "project.structure.side.proportion": "0.0"
+    "project.structure.side.proportion": "0.0",
+    "settings.editor.selected.configurable": "preferences.lookFeel"
   }
 }]]></component>
-  <component name="RunManager" selected="Application.FuncionarioApplication">
+  <component name="RunManager" selected="Application.PropostaApplication">
     <configuration name="EurekaserverApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.example.eurekaserver.EurekaserverApplication" />
       <module name="eurekaserver" />
@@ -93,13 +97,43 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="ApiExceptionHandlerTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Funcionario" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.example.Funcionario.web.controle.exception.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.example.Funcionario.web.controle.exception" />
+      <option name="MAIN_CLASS_NAME" value="com.example.Funcionario.web.controle.exception.ApiExceptionHandlerTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="FuncionarioServicoTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Funcionario" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.example.Funcionario.servico.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.example.Funcionario.servico" />
+      <option name="MAIN_CLASS_NAME" value="com.example.Funcionario.servico.FuncionarioServicoTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.FuncionarioApplication" />
         <item itemvalue="Application.PropostaApplication" />
+        <item itemvalue="Application.FuncionarioApplication" />
         <item itemvalue="Application.EurekaserverApplication" />
-        <item itemvalue="Application.PropostaApplication" />
-        <item itemvalue="Application.FuncionarioApplication" />
+        <item itemvalue="JUnit.ApiExceptionHandlerTest" />
+        <item itemvalue="JUnit.FuncionarioServicoTest" />
       </list>
     </recent_temporary>
   </component>
