@@ -2,6 +2,7 @@ package com.example.Funcionario.web.controle;
 
 import com.example.Funcionario.entidade.Funcionario;
 import com.example.Funcionario.servico.FuncionarioServico;
+import com.example.Funcionario.web.controle.FuncionarioControle;
 import com.example.Funcionario.web.dto.FuncionarioCriarDto;
 import com.example.Funcionario.web.dto.FuncionarioEmailDto;
 import com.example.Funcionario.web.dto.FuncionarioRespostaDto;
@@ -9,7 +10,6 @@ import com.example.Funcionario.web.dto.mapa.FuncionarioMapa;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.extension.ExtendWith;
-import org.mockito.InjectMocks;
 import org.mockito.junit.jupiter.MockitoExtension;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.autoconfigure.web.servlet.AutoConfigureMockMvc;

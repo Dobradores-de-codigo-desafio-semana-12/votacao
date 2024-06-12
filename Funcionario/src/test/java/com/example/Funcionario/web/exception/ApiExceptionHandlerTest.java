@@ -1,4 +1,4 @@
-package com.example.Funcionario.web.controle.exception;
+package com.example.Funcionario.web.exception;
 
 import com.example.Funcionario.exception.*;
 import com.example.Funcionario.web.exception.ApiExceptionHandler;
