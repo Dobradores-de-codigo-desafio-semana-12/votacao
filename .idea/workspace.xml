@@ -5,10 +5,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="b3a724e5-f613-4b0d-873c-e601c8bec78d" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_10_06_2024_13_23__Changes_.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_10_06_2024_13_23__Changes_.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Funcionario/src/main/java/com/example/Funcionario/exception/FuncionarioDesabilitarException.java" beforeDir="false" afterPath="$PROJECT_DIR$/Funcionario/src/main/java/com/example/Funcionario/exception/FuncionarioDesabilitarException.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Funcionario/src/main/java/com/example/Funcionario/exception/FuncionarioNaoSalvoException.java" beforeDir="false" afterPath="$PROJECT_DIR$/Funcionario/src/main/java/com/example/Funcionario/exception/FuncionarioNaoSalvoException.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Proposta/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/Proposta/pom.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -44,96 +46,105 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "git-widget-placeholder": "dev",
-    "ignore.virus.scanning.warn.message": "true",
-    "last_opened_file_path": "C:/Users/T-Gamer/Documents/GitHub/votacao",
-    "project.structure.last.edited": "Project",
-    "project.structure.proportion": "0.15",
-    "project.structure.side.proportion": "0.0",
-    "settings.editor.selected.configurable": "preferences.lookFeel"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;dev&quot;,
+    &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/T-Gamer/Documents/GitHub/votacao&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Project&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.0&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.lookFeel&quot;
   }
-}]]></component>
-  <component name="RunManager" selected="Application.PropostaApplication">
-    <configuration name="EurekaserverApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.example.eurekaserver.EurekaserverApplication" />
-      <module name="eurekaserver" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.example.eurekaserver.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="FuncionarioApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.example.Funcionario.FuncionarioApplication" />
-      <module name="Funcionario" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.example.Funcionario.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="PropostaApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.example.Proposta.PropostaApplication" />
+}</component>
+  <component name="RunManager" selected="JUnit.PropostaControleTest.cadastrarProposta_Sucesso">
+    <configuration name="ApiExceptionHandlerTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="Proposta" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.example.Proposta.*" />
+          <option name="PATTERN" value="com.example.Proposta.web.exception.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="ApiExceptionHandlerTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="Funcionario" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.example.Funcionario.web.controle.exception.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="com.example.Funcionario.web.controle.exception" />
-      <option name="MAIN_CLASS_NAME" value="com.example.Funcionario.web.controle.exception.ApiExceptionHandlerTest" />
+      <option name="PACKAGE_NAME" value="com.example.Proposta.web.exception" />
+      <option name="MAIN_CLASS_NAME" value="com.example.Proposta.web.exception.ApiExceptionHandlerTest" />
       <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="FuncionarioServicoTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="Funcionario" />
+    <configuration name="ApiExceptionHandlerTest.handleFuncionarioJaVotouException" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Proposta" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.example.Funcionario.servico.*" />
+          <option name="PATTERN" value="com.example.Proposta.web.exception.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="com.example.Funcionario.servico" />
-      <option name="MAIN_CLASS_NAME" value="com.example.Funcionario.servico.FuncionarioServicoTest" />
+      <option name="PACKAGE_NAME" value="com.example.Proposta.web.exception" />
+      <option name="MAIN_CLASS_NAME" value="com.example.Proposta.web.exception.ApiExceptionHandlerTest" />
+      <option name="METHOD_NAME" value="handleFuncionarioJaVotouException" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="PropostaControleTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Proposta" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.example.Proposta.web.exception.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.example.Proposta.web.exception" />
+      <option name="MAIN_CLASS_NAME" value="com.example.Proposta.web.exception.PropostaControleTest" />
       <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="PropostaControleTest.cadastrarProposta_Sucesso" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Proposta" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.example.Proposta.web.exception.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.example.Proposta.web.exception" />
+      <option name="MAIN_CLASS_NAME" value="com.example.Proposta.web.exception.PropostaControleTest" />
+      <option name="METHOD_NAME" value="cadastrarProposta_Sucesso" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="PropostaControleTest.getAll_deveRetornarListaDePropostasQuandoExistirem" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Proposta" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.example.Proposta.web.exception.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.example.Proposta.web.exception" />
+      <option name="MAIN_CLASS_NAME" value="com.example.Proposta.web.exception.PropostaControleTest" />
+      <option name="METHOD_NAME" value="getAll_deveRetornarListaDePropostasQuandoExistirem" />
+      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.PropostaApplication" />
-        <item itemvalue="Application.FuncionarioApplication" />
-        <item itemvalue="Application.EurekaserverApplication" />
+        <item itemvalue="JUnit.PropostaControleTest.cadastrarProposta_Sucesso" />
+        <item itemvalue="JUnit.PropostaControleTest" />
+        <item itemvalue="JUnit.PropostaControleTest.getAll_deveRetornarListaDePropostasQuandoExistirem" />
         <item itemvalue="JUnit.ApiExceptionHandlerTest" />
-        <item itemvalue="JUnit.FuncionarioServicoTest" />
+        <item itemvalue="JUnit.ApiExceptionHandlerTest.handleFuncionarioJaVotouException" />
       </list>
     </recent_temporary>
   </component>
