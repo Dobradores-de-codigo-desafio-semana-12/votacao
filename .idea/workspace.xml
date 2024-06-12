@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="b3a724e5-f613-4b0d-873c-e601c8bec78d" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_10_06_2024_13_23__Changes_.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_10_06_2024_13_23__Changes_.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="api-propostas/Configurando-Actuator" />
+      </map>
+    </option>
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="JpbToolWindowState">
+    <option name="isToolWindowVisible" value="false" />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 5
+}</component>
+  <component name="ProjectId" id="2hcPAluq6TfCGLM4bd181rSxijr" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "git-widget-placeholder": "dev",
+    "ignore.virus.scanning.warn.message": "true",
+    "last_opened_file_path": "C:/Users/T-Gamer/Documents/GitHub/votacao/images.png",
+    "project.structure.last.edited": "Modules",
+    "project.structure.proportion": "0.15",
+    "project.structure.side.proportion": "0.0",
+    "settings.editor.selected.configurable": "preferences.lookFeel"
+  }
+}]]></component>
+  <component name="RunManager" selected="JUnit.PropostaControleTest.cadastrarProposta_Sucesso">
+    <configuration name="ApiExceptionHandlerTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Proposta" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.example.Proposta.web.exception.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.example.Proposta.web.exception" />
+      <option name="MAIN_CLASS_NAME" value="com.example.Proposta.web.exception.ApiExceptionHandlerTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ApiExceptionHandlerTest.handleFuncionarioJaVotouException" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Proposta" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.example.Proposta.web.exception.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.example.Proposta.web.exception" />
+      <option name="MAIN_CLASS_NAME" value="com.example.Proposta.web.exception.ApiExceptionHandlerTest" />
+      <option name="METHOD_NAME" value="handleFuncionarioJaVotouException" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="PropostaControleTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Proposta" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.example.Proposta.web.exception.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.example.Proposta.web.exception" />
+      <option name="MAIN_CLASS_NAME" value="com.example.Proposta.web.exception.PropostaControleTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="PropostaControleTest.cadastrarProposta_Sucesso" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Proposta" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.example.Proposta.web.exception.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.example.Proposta.web.exception" />
+      <option name="MAIN_CLASS_NAME" value="com.example.Proposta.web.exception.PropostaControleTest" />
+      <option name="METHOD_NAME" value="cadastrarProposta_Sucesso" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="PropostaControleTest.getAll_deveRetornarListaDePropostasQuandoExistirem" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Proposta" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.example.Proposta.web.exception.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.example.Proposta.web.exception" />
+      <option name="MAIN_CLASS_NAME" value="com.example.Proposta.web.exception.PropostaControleTest" />
+      <option name="METHOD_NAME" value="getAll_deveRetornarListaDePropostasQuandoExistirem" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="JUnit.PropostaControleTest.cadastrarProposta_Sucesso" />
+        <item itemvalue="JUnit.PropostaControleTest" />
+        <item itemvalue="JUnit.PropostaControleTest.getAll_deveRetornarListaDePropostasQuandoExistirem" />
+        <item itemvalue="JUnit.ApiExceptionHandlerTest" />
+        <item itemvalue="JUnit.ApiExceptionHandlerTest.handleFuncionarioJaVotouException" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="b3a724e5-f613-4b0d-873c-e601c8bec78d" name="Changes" comment="" />
+      <created>1717890252275</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1717890252275</updated>
+    </task>
+    <servers />
+  </component>
+</project>
