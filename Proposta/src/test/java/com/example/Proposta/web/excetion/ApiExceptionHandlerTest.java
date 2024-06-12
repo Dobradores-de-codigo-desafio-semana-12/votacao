@@ -1,6 +1,8 @@
-package com.example.Proposta.web.exception;
+package com.example.Proposta.web.excetion;
 
 import com.example.Proposta.excecao.*;
+import com.example.Proposta.web.exception.ApiExceptionHandler;
+import com.example.Proposta.web.exception.ErrorMessage;
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.extension.ExtendWith;
 import org.springframework.beans.factory.annotation.Autowired;
