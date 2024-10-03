@@ -64,7 +64,7 @@ A API Proposta é responsável por gerenciar as propostas no sistema. Você pode
 # ⚙️ Spring Actuator
 O Spring Actuator fornece funcionalidades de monitoramento e gerenciamento para aplicações Spring. Você pode acessá-la em http://localhost:8082/actuator.
 
-## 🚪 Endpoints do Actuator
+# 🚪 Endpoints do Actuator
 
 Você pode acessar os seguintes endpoints do Actuator:
 
