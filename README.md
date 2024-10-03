@@ -61,6 +61,23 @@ A API Funcionario é responsável por gerenciar os funcionários no sistema. Voc
 # 📈 API Propostas
 A API Proposta é responsável por gerenciar as propostas no sistema. Você pode acessá-la em [http://localhost:8082](http://localhost:8082).
 
+# ⚙️ Spring Actuator
+O Spring Actuator fornece funcionalidades de monitoramento e gerenciamento para aplicações Spring. Você pode acessá-la em http://localhost:8082/actuator.
+
+# 🚪 Endpoints do Actuator
+
+Você pode acessar os seguintes endpoints do Actuator:
+
+| Método   | Route                     | Descrição                               |
+|----------|---------------------------|-----------------------------------------|
+| GET      | /actuator                 | Lista todos os endpoints disponíveis    |
+| GET      | /actuator/health          | Verifica a saúde da aplicação           |
+| GET      | /actuator/metrics         | Obtém métricas da aplicação             |
+| GET      | /actuator/info            | Exibe informações sobre a aplicação     |
+| GET      | /actuator/env             | Exibe as propriedades de ambiente       |
+| GET      | /actuator/loggers         | Gerencia os loggers da aplicação        |
+| POST     | /actuator/loggers         | Configura loggers                       |
+
 # 🚪 Endpoints Funcionarios disponíveis
 
 | Método   | Route                     | Descrição                               |
