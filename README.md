@@ -1,4 +1,4 @@
-<img src="C:\Users\T-Gamer\Documents\GitHub\votacao\compassUolLogoSvg.svg" width="40%"/>
+<img src="compassUolLogoSvg.svg" width="40%"/>
 
 # 💡 Sistema de Propostas
 
